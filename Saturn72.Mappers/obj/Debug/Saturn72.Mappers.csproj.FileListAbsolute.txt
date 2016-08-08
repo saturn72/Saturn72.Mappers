@@ -1,5 +1,0 @@
-C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers\bin\Debug\Saturn72.Mappers.dll
-C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers\bin\Debug\Saturn72.Mappers.pdb
-C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers\obj\Debug\Saturn72.Mappers.csprojResolveAssemblyReference.cache
-C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers\obj\Debug\Saturn72.Mappers.dll
-C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers\obj\Debug\Saturn72.Mappers.pdb
