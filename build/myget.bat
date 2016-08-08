@@ -35,12 +35,6 @@ echo run unit tests from %testBin%
 set nunitDir=%pkgDir%\NUnit.ConsoleRunner.3.4.1\tools
 set nunitExe=nunit3-console.exe
 
-echo %nunitDir%\%nunitExe%
-if exist %nunitDir%\%nunitExe%(
-echo file exist
-)else (
-echo file not exists
-)
 echo cd %nunitDir%
 cd %nunitDir%
 
