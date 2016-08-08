@@ -31,8 +31,8 @@ echo install nunit runners to %pkgDir%
 call %nuget% install NUnit.Runners -OutputDirectory %pkgDir%
 set nunitDir=%pkgDir%\NUnit.ConsoleRunner.3.4.1\tools
 set nunitExe=nunit3-console.exe
-cd nunitDir
-nunitExe /config:%config% %testBin%
+cd %nunitDir%
+%nunitExe% /config:%config% %testBin%
 if not "%errorlevel%"=="0" goto failure
 
 
