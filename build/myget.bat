@@ -9,10 +9,10 @@ if not "%PackageVersion%" == "" (
    set version=-Version %PackageVersion%
 )
 
-set srcDir = src\
-set slnName = %srcDir%\Saturn72.Mappers.sln
-set prjName = %srcDir%\Saturn72.Mappers\Saturn72.Mappers.csproj
-set testBin = %srcDir%\Saturn72.Mappers.Tests\bin\%config%\Saturn72.Mappers.Tests.dll
+set srcDir=src\
+set slnName=%srcDir%\Saturn72.Mappers.sln
+set prjName=%srcDir%\Saturn72.Mappers\Saturn72.Mappers.csproj
+set testBin=%srcDir%\Saturn72.Mappers.Tests\bin\%config%\Saturn72.Mappers.Tests.dll
 set pkgDir=%cd%\%srcDir%\packages
 
 
