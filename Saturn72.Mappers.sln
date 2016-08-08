@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Mappers", "Saturn7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Mappers.Tests", "Saturn72.Mappers.Tests\Saturn72.Mappers.Tests.csproj", "{6EAE965E-4EE4-40BB-8DD4-813943FD26C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{D8EE97B0-E136-420D-91DF-7BC02A997B77}"
+	ProjectSection(SolutionItems) = preProject
+		build\myget.bat = build\myget.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
