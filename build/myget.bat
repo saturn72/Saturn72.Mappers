@@ -31,11 +31,7 @@ REMecho install nunit runners to %pkgDir%
 REMcall %nuget% install NUnit.Console -OutputDirectory %pkgDir%
 
 echo run unit tests from %testBin%
-set nunitDir=%pkgDir%\NUnit.ConsoleRunner.3.4.1\tools\
-set nunitExe=nunit3-console.exe
-
-echo cd %nunitDir%
-cd %nunitDir%
+set nunitExe==%pkgDir%\NUnit.ConsoleRunner.3.4.1\tools\nunit3-console.exe
 
 %nunitExe% /config:%config% %testBin%
 if not "%errorlevel%"=="0" goto failure
