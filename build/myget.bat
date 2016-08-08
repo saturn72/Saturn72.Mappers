@@ -20,7 +20,6 @@ REM Restore nuget packages
 echo restore nuget packages to %pkgDir% directory
 call %NuGet% restore %slnName% -OutputDirectory %pkgDir% -NonInteractive
 
-
 REM Build
 echo Build solution %slnName%
 "%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" %slnName% /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
@@ -29,8 +28,8 @@ if not "%errorlevel%"=="0" goto failure
 
 REM Unit tests
 echo install nunit runners to %pkgDir%
-call %nuget% install NUnit.Runners -OutputDirectory &pkgDir%
-%pkgDir%\NUnit.Runners.3.4.1\tools\nunit3-console.exe /config:%config%  %testBin%
+call %nuget% install NUnit.Runners -OutputDirectory %pkgDir%
+%pkgDir%\NUnit.Runners.3.4.1\tools\nunit3-console.exe /config:%config% %testBin%
 if not "%errorlevel%"=="0" goto failure
 
 
