@@ -31,7 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Saturn72.UnitTesting.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Saturn72.UnitTesting.Framework.1.0.0\lib\net461\Saturn72.UnitTesting.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -45,11 +49,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Saturn72.UnitTesting.Framework\Saturn72.UnitTesting.Framework.csproj">
-      <Project>{5CBFC4C3-21AF-418B-AEA6-BE38877D0B91}</Project>
-      <Name>Saturn72.UnitTesting.Framework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Saturn72.Mappers.csproj">
+    <ProjectReference Include="..\Saturn72.Mappers\Saturn72.Mappers.csproj">
       <Project>{6779F811-36E1-44AA-A324-15AA35C36491}</Project>
       <Name>Saturn72.Mappers</Name>
     </ProjectReference>

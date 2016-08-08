@@ -1,0 +1,10 @@
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\obj\Debug\Saturn72.Mappers.Tests.csprojResolveAssemblyReference.cache
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\Saturn72.Mappers.Tests.dll
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\Saturn72.Mappers.Tests.pdb
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\nunit.framework.dll
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\Saturn72.Mappers.dll
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\Saturn72.UnitTesting.Framework.dll
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\Saturn72.Mappers.pdb
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\bin\Debug\nunit.framework.xml
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\obj\Debug\Saturn72.Mappers.Tests.dll
+C:\dev\git\github_repos\Saturn72.Mappers\src\Saturn72.Mappers.Tests\obj\Debug\Saturn72.Mappers.Tests.pdb
