@@ -27,11 +27,11 @@ if not "%errorlevel%"=="0" goto failure
 
 
 REM Unit tests
-REMecho install nunit runners to %pkgDir%
-REMcall %nuget% install NUnit.Console -OutputDirectory %pkgDir%
+echo install nunit runners to %pkgDir%
+call %Nuget% install NUnit.Runners -Version 2.6.4 -OutputDirectory %pkgDir%
 
 echo run unit tests from %testBin%
-set nunitExe==%pkgDir%\NUnit.ConsoleRunner.3.4.1\tools\nunit3-console.exe
+set nunitExe==%pkgDir%\NUnit.Runners.2.6.4\tools\nunit-console.exe
 
 %nunitExe% /config:%config% %testBin%
 if not "%errorlevel%"=="0" goto failure
