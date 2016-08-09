@@ -38,7 +38,7 @@ namespace Saturn72.Mappers.Tests
         }
 
         [Test]
-        public void Map_SourceInstanceToDestinationInstance()
+        public void Map_ToInstance()
         {
             var source = new MapSource
             {
@@ -70,6 +70,34 @@ namespace Saturn72.Mappers.Tests
             dest.ShouldNotMap_DiffPropType.ShouldEqual(default(int));
             dest.Should_Map_From_Int_To_TestEnum.ShouldEqual((TestEnum) source.Should_Map_From_Int_To_TestEnum);
             dest.Should_Map_From_TestEnum_To_Int.ShouldEqual((int) source.Should_Map_From_TestEnum_To_Int);
+        }
+
+        [Test]
+        public void Map_SourceInstanceToDestinationInstance_ViaExtensionMethod()
+        {
+            var source = new MapSource
+            {
+                ShouldNotMap_DiffPropName = "ShouldNotMap_DiffPropName",
+                ShouldNotMap_DiffPropType = "ShouldNotMap_DiffPropName",
+                ShouldNotMap_NotExists = "ShouldNotMap_NotExists",
+                String = "String",
+                Sub = new Source_SubType
+                {
+                    Int = int.MaxValue,
+                    Long = long.MaxValue
+                },
+                Should_Map_From_Int_To_TestEnum = 1,
+                Should_Map_From_TestEnum_To_Int = TestEnum.Value2
+            };
+
+            var dest = source.Map<MapSource, MapDestination>();
+
+            dest.String.ShouldEqual(source.String);
+            dest.ShouldNotMap_DiffPropName_.ShouldEqual(default(string));
+            dest.Sub.ShouldEqual(source.Sub);
+            dest.ShouldNotMap_DiffPropType.ShouldEqual(default(int));
+            dest.Should_Map_From_Int_To_TestEnum.ShouldEqual((TestEnum)source.Should_Map_From_Int_To_TestEnum);
+            dest.Should_Map_From_TestEnum_To_Int.ShouldEqual((int)source.Should_Map_From_TestEnum_To_Int);
         }
 
 

@@ -26,13 +26,14 @@ namespace Saturn72.Mappers
             return Map(srcPropsDictionary, instance);
         }
 
-        public static TDestination Map<TSource, TDestination>(TSource source, TDestination destination)
+
+        public static void Map<TSource, TDestination>(TSource source, TDestination destination)
             where TSource : class
             where TDestination : class
         {
             var propDictionary = ConvertInstanceToPropertyDictionary(source);
 
-            return Map(propDictionary, destination);
+            Map(propDictionary, destination);
         }
 
 
